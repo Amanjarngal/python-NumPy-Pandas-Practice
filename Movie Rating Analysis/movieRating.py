@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 df = pd.read_csv("movieData.csv")
-print(df)
+# print(df)
 # (a) Average rating per genre
 Rating_avg = df.groupby("Genre")["UserRating"].mean()
 print(Rating_avg)
